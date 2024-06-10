@@ -56,3 +56,21 @@
         { 0x30, 0x30, 0x30, 0x30, 0x30, 0x30, 0x30, 0x30, 0x30, 0x30, 0x30, 0x30 }
 
 #endif
+
+/* One shot Keys */
+#    define ONESHOT_TAP_TOGGLE 3  /* Tapping this number of times holds the key until tapped once again. */
+#    define ONESHOT_TIMEOUT 5000  /* Time (in ms) before the one shot key is released */
+
+/* Kinetic Mouse Keys */
+#    define MK_KINETIC_SPEED
+#    define MOUSEKEY_DELAY 3 /*5*/
+#    define MOUSEKEY_INTERVAL 8 /*10, t bwn crsr mvmt*/
+#    define MOUSEKEY_MOVE_DELTA 16 /*16, acc step*/
+#    define MOUSEKEY_INITIAL_SPEED 300 /*100*/
+#    define MOUSEKEY_BASE_SPEED 2000 /*5000, max spd*/
+#    define MOUSEKEY_DECELERATED_SPEED 625 /*400*/
+#    define MOUSEKEY_ACCELERATED_SPEED 1250 /*3000*/
+#    define MOUSEKEY_WHEEL_INITIAL_MOVEMENTS 8 /*16*/
+#    define MOUSEKEY_WHEEL_BASE_MOVEMENTS 16 /*32*/
+#    define MOUSEKEY_WHEEL_ACCELERATED_MOVEMENTS 24 /*48*/
+#    define MOUSEKEY_WHEEL_DECELERATED_MOVEMENTS 4 /*8*/

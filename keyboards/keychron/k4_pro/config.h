@@ -52,7 +52,7 @@
 #        define LED_DRIVER_SHUTDOWN_PIN C14
 
 #        define HOST_LED_MATRIX_LIST \
-            { 20, 21, 22 }
+            { 33, 34, 35 }
 
 #        define BAT_LEVEL_LED_LIST \
             { 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 }
