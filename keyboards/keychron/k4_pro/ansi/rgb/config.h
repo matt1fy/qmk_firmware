@@ -50,6 +50,13 @@
 
 #    define RGB_MATRIX_KEYPRESSES
 #    define RGB_MATRIX_FRAMEBUFFER_EFFECTS
+#    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 255
+#    define RGB_MATRIX_DEFAULT_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS
+#    define RGB_MATRIX_DEFAULT_SAT 255
+#    define RGB_MATRIX_DEFAULT_SPD 50
+
+#    define ENABLE_RGB_MATRIX_GRADIENT_UP_DOWN
+#    define ENABLE_RGB_MATRIX_GRADIENT_LEFT_RIGHT
 
 /* Set LED driver current */
 #    define SNLED27351_CURRENT_TUNE \
@@ -59,18 +66,18 @@
 
 /* One shot Keys */
 #    define ONESHOT_TAP_TOGGLE 3  /* Tapping this number of times holds the key until tapped once again. */
-#    define ONESHOT_TIMEOUT 5000  /* Time (in ms) before the one shot key is released */
+#    define ONESHOT_TIMEOUT 3000  /* Time (in ms) before the one shot key is released */
 
 /* Kinetic Mouse Keys */
-#    define MK_KINETIC_SPEED
-#    define MOUSEKEY_DELAY 3 /*5*/
-#    define MOUSEKEY_INTERVAL 8 /*10, t bwn crsr mvmt*/
-#    define MOUSEKEY_MOVE_DELTA 16 /*16, acc step*/
-#    define MOUSEKEY_INITIAL_SPEED 300 /*100*/
-#    define MOUSEKEY_BASE_SPEED 2000 /*5000, max spd*/
-#    define MOUSEKEY_DECELERATED_SPEED 625 /*400*/
-#    define MOUSEKEY_ACCELERATED_SPEED 1250 /*3000*/
-#    define MOUSEKEY_WHEEL_INITIAL_MOVEMENTS 8 /*16*/
-#    define MOUSEKEY_WHEEL_BASE_MOVEMENTS 16 /*32*/
-#    define MOUSEKEY_WHEEL_ACCELERATED_MOVEMENTS 24 /*48*/
-#    define MOUSEKEY_WHEEL_DECELERATED_MOVEMENTS 4 /*8*/
+#    define MOUSEKEY_INERTIA
+#    define MOUSEKEY_DELAY 19 /*150*/
+#    define MOUSEKEY_INTERVAL 6 /*16, t bwn crsr mvmt*/
+#    define MOUSEKEY_MAX_SPEED 28 /*32, acc step*/
+#    define MOUSEKEY_TIME_TO_MAX 55 /*32*/
+#    define MOUSEKEY_FRICTION 12 /*24*/
+#    define MOUSEKEY_MOVE_DELTA 1 /*1 strongly recommended*/
+
+#    define MOUSEKEY_WHEEL_INITIAL_MOVEMENTS 8
+#    define MOUSEKEY_WHEEL_BASE_MOVEMENTS 16
+#    define MOUSEKEY_WHEEL_ACCELERATED_MOVEMENTS 32
+#    define MOUSEKEY_WHEEL_DECELERATED_MOVEMENTS 4

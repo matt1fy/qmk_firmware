@@ -47,13 +47,13 @@
 
 /* Indications */
 #    define BT_HOST_LED_MATRIX_LIST \
-        { 15, 16, 17 }
+        { 28, 43, 57 }
 
 #    define P2P4G_HOST_LED_MATRIX_LIST \
-        { 18 }
+        { 13 }
 
 #    define BAT_LEVEL_LED_LIST \
-        { 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 }
+        { 59, 60, 61, 62, 63, 64, 65, 66, 67, 68 }
 
 #    define CAPS_LOCK_INDEX 44
 #    define LOW_BAT_IND_INDEX \
@@ -63,3 +63,16 @@
 #    define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 
 #endif
+
+/* One shot Keys */
+#    define ONESHOT_TAP_TOGGLE 3  /* Tapping this number of times holds the key until tapped once again. */
+#    define ONESHOT_TIMEOUT 5000  /* Time (in ms) before the one shot key is released */
+
+/* Kinetic Mouse Keys */
+#    define MOUSEKEY_INERTIA
+#    define MOUSEKEY_DELAY 25 /*150*/
+#    define MOUSEKEY_INTERVAL 6 /*16, t bwn crsr mvmt*/
+#    define MOUSEKEY_MAX_SPEED 14 /*32, acc step*/
+#    define MOUSEKEY_TIME_TO_MAX 45 /*32*/
+#    define MOUSEKEY_FRICTION 12 /*24*/
+#    define MOUSEKEY_MOVE_DELTA 1 /*1 strongly recommended*/

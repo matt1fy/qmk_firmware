@@ -52,10 +52,10 @@
 #        define LED_DRIVER_SHUTDOWN_PIN C14
 
 #        define HOST_LED_MATRIX_LIST \
-            { 33, 34, 35 }
+            { 15, 16, 17 }
 
 #        define BAT_LEVEL_LED_LIST \
-            { 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 }
+            { 98, 84, 85, 86, 68, 69, 70, 51, 52, 53 }
 
 /* Backlit disable timeout when keyboard is disconnected(unit: second) */
 #        define DISCONNECTED_BACKLIGHT_DISABLE_TIMEOUT 40
@@ -85,3 +85,6 @@
 /* Factory test keys */
 #define FN_KEY1 MO(1)
 #define FN_KEY2 MO(3)
+
+/* Additional -km layers */
+#define DYNAMIC_KEYMAP_LAYER_COUNT 6
