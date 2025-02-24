@@ -127,14 +127,21 @@
 
 /* One shot Keys */
 #define ONESHOT_TAP_TOGGLE 2  /* Tapping this number of times holds the key until tapped once again. */
-#define ONESHOT_TIMEOUT 5000  /* Time (in ms) before the one shot key is released */
+#define ONESHOT_TIMEOUT 2500  /* Time (in ms) before the one shot key is released */
+
+// Auto shift
+// #define AUTO_SHIFT_MODIFIERS
+#define NO_AUTO_SHIFT_ALPHA
+#define NO_AUTO_SHIFT_NUMERIC
+#define AUTO_SHIFT_TIMEOUT 150
+// #define AUTO_SHIFT_REPEAT
 
 /* Mousekeys */
 // Inertia Mode
 #define MOUSEKEY_INERTIA
 #define MOUSEKEY_DELAY 0 /* 19 */
 #define MOUSEKEY_INTERVAL 8 /* 8 */
-#define MOUSEKEY_MAX_SPEED 22 /* 28 */
+#define MOUSEKEY_MAX_SPEED 18 /* 28 */
 #define MOUSEKEY_TIME_TO_MAX 32 /* 32 */
 #define MOUSEKEY_FRICTION 15 /* 10 */
 #define MOUSEKEY_MOVE_DELTA 1 /*1 strongly recommended*/
@@ -143,31 +150,3 @@
 #define MOUSEKEY_WHEEL_BASE_MOVEMENTS 32
 #define MOUSEKEY_WHEEL_ACCELERATED_MOVEMENTS 48
 #define MOUSEKEY_WHEEL_DECELERATED_MOVEMENTS 8
-
-// Accelerated Mode
-// #define MOUSEKEY_DELAY             0
-// #define MOUSEKEY_INTERVAL          16
-// #define MOUSEKEY_MAX_SPEED         6
-// #define MOUSEKEY_TIME_TO_MAX       32
-// // Pair INT and MAX_SPD like so 7+2 or 4+1 or 5+2
-//
-// #define MOUSEKEY_WHEEL_DELAY       0
-// #define MOUSEKEY_WHEEL_INTERVAL    80
-// #define MOUSEKEY_WHEEL_DELTA       1
-// #define MOUSEKEY_WHEEL_MAX_SPEED   8
-// #define MOUSEKEY_WHEEL_TIME_TO_MAX 30
-
-// Kinetic Mode
-// #define MK_KINETIC_SPEED
-// #define MOUSEKEY_DELAY 0 [> 5 <]
-// #define MOUSEKEY_INTERVAL 8 [> 10 <]
-// #define MOUSEKEY_MOVE_DELTA 28 [> 16 <]
-// #define MOUSEKEY_INITIAL_SPEED 125 [> 100 <]
-// #define MOUSEKEY_BASE_SPEED 5000 [> 5000 <]
-// #define MOUSEKEY_DECELERATED_SPEED 400 [> 400 <]
-// #define MOUSEKEY_ACCELERATED_SPEED 3000 [> 3000 <]
-//
-// #define MOUSEKEY_WHEEL_INITIAL_MOVEMENTS 16
-// #define MOUSEKEY_WHEEL_BASE_MOVEMENTS 32
-// #define MOUSEKEY_WHEEL_ACCELERATED_MOVEMENTS 48
-// #define MOUSEKEY_WHEEL_DECELERATED_MOVEMENTS 8
